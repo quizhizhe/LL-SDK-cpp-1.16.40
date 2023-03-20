@@ -79,6 +79,8 @@ namespace ll{
         constexpr uint64_t EVENTAPI_PlayerInteractEntity_2 = 0x70;
         // Hopper::Hopper
         constexpr uint64_t EVENTAPI_HopperSearchItem = 0x5;
+        // FillingContainer::FillingContainer a2
+        constexpr uint64_t EVENTAPI_PlayerDropItem = 0xF8;
 
         // ->src/llapi/mc
 
@@ -136,14 +138,14 @@ namespace ll{
         constexpr uint64_t PLAYERAPI_getClientSubId = 0xDC0;
         // Null
         constexpr uint64_t PLAYERAPI_crashClient = 0X38;
-        // Null
-        constexpr uint64_t PLAYERAPI_sendTransferPacket_port = 0X24;
-        // Null
+        // TransferPacket::mServerPort
+        constexpr uint64_t PLAYERAPI_sendTransferPacket_port = 0X48;
+        // TransferPacket::mServerAddress
         constexpr uint64_t PLAYERAPI_sendTransferPacket_address = 0X28;
-        // Null
-        constexpr uint64_t PLAYERAPI_sendSetScorePacket_type = 0X30;
-        // Null
-        constexpr uint64_t PLAYERAPI_sendSetScorePacket_data = 0X38;
+        // SetScorePacket::mType
+        constexpr uint64_t PLAYERAPI_sendSetScorePacket_type = 0X28;
+        // SetScorePacket::mScoreInfo
+        constexpr uint64_t PLAYERAPI_sendSetScorePacket_data = 0X30;
         // Null
         constexpr uint64_t PLAYERAPI_sendCommandRequestPacket_cmd = 0X30;
         // Null
